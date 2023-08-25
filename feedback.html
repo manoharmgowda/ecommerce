@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>feedback form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+        <div class="container" style="margin-top: 30px;">
+            <form action="">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <label for="email">Name:</label>
+                        <input type="email" class="form-control" id="name" placeholder="enter name" name="name" required>
+                    </div>   
+                    <div class="col-md-5">
+                        <label for="email">Phone Number:</label>
+                        <input type="number" class="form-control" id="num" placeholder="phnoenumber" name="num" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <label for="email">Reason for visit:</label>
+                        <input type="textarea" class="form-control" id="res" placeholder="reason" name="res" required><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="dropdown">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <label for="dropdowm">User Interface</label>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" data-toggle="dropdown">
+                        <ul class="dropdown-menu">
+                          <li><a href="#">HTML</a></li>
+                          <li><a href="#">CSS</a></li>
+                          <li><a href="#">JavaScript</a></li>
+                        </ul>
+                        </div>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <input type="checkbox" name="furthernotification" id="noti">
+                        <label for="checkbox">Would you like to be contacted by our CSR?</label>
+                    </div>
+                </div>
+            </form>
+        </div>  
+    </body>
+</html>

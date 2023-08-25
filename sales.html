@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sample modal with nav bar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        body{
+            background-color: rgb(240, 230, 238);
+        }
+        a{
+            color: #000;
+        }
+        a:hover{
+            color:yellowgreen;
+            text-decoration: underline overline;
+        }
+        .heading{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:18px;
+            font-style: normal;
+            font-weight: bold;
+        }
+        .modal-header{
+            background-color: rgb(135, 152, 206);
+        }
+    </style>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#">
+                        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 50px;background-color: rgb(77, 77, 114);border-radius: 5px;color: black;"><img src="enterprices.jpg" style="height: 50px;"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="products.jpg" style="height: 20px;" alt="">Products<span class="caret"></span></a>
+                    <div class="dropdown-menu">
+                        <div class="container" style="border-radius: 50px;">
+                            <table>
+                                <tr>
+                                    <td style="padding-right: 50px;"><a href="#"><h4>Our Products</h4></a></td>
+                                    <hr class="dotted">
+                                    <td style="padding-right: 50px;"><a href="#"><h4>Accessories</h4></a></td>
+                                    <td style="padding-right: 50px;"><a href="#"><h4>Batteries</h4></a></td>
+                                    <td style="padding-right: 50px;"><a href="#"><h4>Hardware Products</h4></a></td>
+                                    <td style="padding-right: 50px;"><a href="#"><h4>Playwoods Sheets</h4></a></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Desktops</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Screen Guard</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Amaron</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Monitor</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>RajKamal</center></a></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Laptops</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Laptop Covers</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Duracell</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Keyboard</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Neelkamal</center></a></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Air Conditioner's</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Flip Covers</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Everyday</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Mouse</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Centuryply</center></a></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Refrigirators</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Laptop-Bags</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Panasonic</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Printer</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Vortex</center></a></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Fans</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Clippers & Holders</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center></center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>UPS</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center></center></a></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>LED TV</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center></center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center></center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center>Scanners</center></a></td>
+                                    <td style="padding-right: 50px;"><a class="" href="#"><center></center></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="servies.jpg" height="20px" alt="">Services<span class="caret"></span></a>
+                        <div class="dropdown-menu">
+                            <table>
+                                <tr>
+                                    <th style="padding-left: 18px;"><a href="hardware.html">Hardware Services</a></th>
+                                </tr>
+                                <tr>
+                                    <th style="padding-left: 22px;"><a href="network.html">Network Services</a></th>
+                                </tr>
+                                <tr>
+                                    <th style="padding-left: 30px;"><a href="mobile.html">Mobile Services</a></th>
+                                </tr>
+                                <tr>
+                                    <th style="padding-left: 30px;"><a href="sales.html">Product Sales</a></th>
+                                </tr>
+                                <tr>
+                                    <th style="padding-left: 15px;"><a href="purchase.html">Product Purchase</a></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li><a href="#ordermodal"><span  data-toggle="modal" data-target="#ordermodal"><img src="placeorder.jpg" style="height: 20px;" alt=""> Place Order</span></a>
+                        <div class="modal fade" id="ordermodal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <img src="place.jpg" style="height: 50px;" alt="">
+                                        <label for="" class="">Login </label>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <div class="alert alert-info">
+                                            <strong><img src="info.jpg" style="height: 30px;" alt=""></strong> Login to your account to order products.
+                                          </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-sm">
+                                            <div class="form-group">
+                                              <label for="email">Email:</label>
+                                              <input type="text" value="" class="form-control" id="email" placeholder="enter given email" name="email">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="email">Password:</label>
+                                              <input type="text" value="" class="form-control" id="pwd" placeholder="enter password" name="pwd">
+                                            </div>
+                                              <div class="form-group">
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" name="remember">Remember me</label>
+                                                </div>
+                                              <div class="form-group">
+                                                <button type="submit" class="btn btn-primary col-sm-2">Login</button>
+                                                <div class="col-sm-1"></div>
+                                                <button type="reset" class="btn btn-danger col-sm-2">Reset</button>
+                                              </div>
+                                            </div>
+                                          <div class="modal-footer">
+                                              <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#about"><img src="info.jpg" style="height: 20px;" alt=""><span data-toggle="modal" data-target="#about">About</span></a>
+                        <div class="modal fade" id="about" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <img src="about.jpg" style="height: 100px;" alt="">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-sm">
+                                            <p><b>Mukundha Enterprises</b> is a Distributor unit of electronic products and accessories.We also sale plywood sheets.
+                                            We have the parternship with various electric outlets and also provie various servies <b>Vendor Sales</b>,
+                                            <b>Retail Sale</b>,<b>Direct Sale</b>,<b>Product Delivery</b>,<b>Purchase.</b></p>
+                                            <p>Invisuals who show intrest in pruchasing the products from us can direrctly place an order by simply logging-in
+                                                or can contact our CSA (Customer Support Agent) and place an order.</p>
+                                            <p>We at <b>Mukundha Enterprises</b> are looking forward to improve our market and outlet sales.
+                                            Retailers or Whole Sales can directly contact us via what's app or email or phone.</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div></li>
+                            <li><a href="#contact"><span data-toggle="modal" data-target="#contact"><img src="contactus.jpg" style="height: 20px;" alt="">Contact</span></a>
+                                <div class="modal fade" id="contact" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <img src="contactus1.jpg" style="height: 100px;" alt="">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-sm">
+                                                    <p><b>Mukundha Enterprises:</b><br></p>
+                                                    <img src="mail.jpg" style="height: 20px;" alt="">&nbsp; mukundha_enterprises@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <img src="contact.jpg" style="height: 20px;">&nbsp;1224356987<br>
+                                                    <img src="landline.jpg" style="height: 20px;" alt="">&nbsp; 080-88664421 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <img src="whatsapp.jpg" style="height: 20px;" alt="">&nbsp;1224356987<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="location.jpg" style="height: 20px;" alt="">&nbsp;7th main MG Road,<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BangloreNorth<br>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="signup.html"><span data-toggle="modal" data-target="#signupmodal"><img src="signup.jpg" style="height: 40px;" alt=""></span></a></li>
+
+                            <li><a href="#mymodal"><span data-toggle="modal" data-target="#mymodal"><img src="login.jpg" style="height: 40px;" alt=""></span></a></li>
+                                <div class="modal fade" id="mymodal" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <img src="login1.jpg" style="height: 50px;" alt="">
+                                                <label for="">Login</label>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-sm">
+                                                    <div class="form-group">
+                                                    <label for="email">Email:</label>
+                                                    <input type="text" value="" class="form-control" id="email" placeholder="enter given email" name="email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                    <label for="email">Password:</label>
+                                                    <input type="text" value="" class="form-control" id="pwd" placeholder="enter password" name="pwd">
+                                                    </div>
+                                                    </div>
+                                                    <div class="container-sm">
+                                                    <div class="form-group">
+                                                        <div class="checkbox">
+                                                        <label><input type="checkbox" name="remember">Remember me</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn btn-primary col-sm-2">Login</button>
+                                                        <div class="col-sm-1"></div>
+                                                        <button type="reset" class="btn btn-danger col-sm-2">Reset</button>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                                <a href="signup.html" type="button" class="btn btn-info" >Create New Account</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+        </nav>
+
+        <div class="container-fluid">
+            <h3 style="font-family: 'Times New Roman', Times, serif; font-size: 32px; margin-top: 0px; text-align: center;">Product Sales</h3>
+            <div class="col-sm-4">
+                <a href="#"><img src="sales.jpg" alt="" style="height: 200px; width: 350px;"></a><br>
+                <p style="font-family: 'Times New Roman', Times, serif; font-size: 18px; margin-top: 0px; text-align: center;">Sales</p>
+            </div>
+            <div class="col-sm-4">
+                <p style="font-family: 'Times New Roman', Times, serif; font-size: 18px; margin-top: 0px; text-align: center;">A sales process is a repeatable, well-structured sequence of actions taken by a salesperson to convert prospects into customers. 
+                    The most effective sales processes have between 5 and 7 steps: Prospecting, Qualifying, Approaching, Presenting, Objection Handling, Closing, and Following Up.</p>
+            </div>
+            <div class="col-sm-4">
+                <ul style="list-style-type: none;">
+                    <li><p style="font-family: 'Times New Roman', Times, serif; font-size: 24px; margin-top: 0px; text-align: center;">Products sold by our team</p>
+                        <hr class="dashed"></li>
+                    <li><p style="font-family: 'Times New Roman', Times, serif; font-size: 16px; margin-top: 0px; text-align: center;">Desktops[new and refurbished]</p></li>
+                    <li><p style="font-family: 'Times New Roman', Times, serif; font-size: 16px; margin-top: 0px; text-align: center;">Laptops[new and refurbished]</p></li>
+                    <li><p style="font-family: 'Times New Roman', Times, serif; font-size: 16px; margin-top: 0px; text-align: center;">Harddisks,SD Card</p></li>
+                    <li><p style="font-family: 'Times New Roman', Times, serif; font-size: 16px; margin-top: 0px; text-align: center;">Mobiles[new and refurbished]</p></li>
+                    <li><p style="font-family: 'Times New Roman', Times, serif; font-size: 16px; margin-top: 0px; text-align: center;">Protective Cases and etc.........</p></li>
+                </ul>
+            </div>
+        </div>   
+    </body>
+</html>
